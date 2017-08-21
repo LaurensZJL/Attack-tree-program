@@ -1,0 +1,91 @@
+
+node.name = DoS(Setter1PLC)
+node.difficulty = 0
+node.operation = 0
+node.depth = 0
+node.identifier = 0
+node.parent = 0
+
+node.name = Exploit vuln in Setter1PLC
+node.difficulty = 0
+node.operation = 1
+node.depth = 1
+node.identifier = 2
+node.parent = 0
+
+node.name = Gain physical access to component Setter1PLC
+node.difficulty = 0
+node.operation = 2
+node.depth = 1
+node.identifier = 3
+node.parent = 0
+
+node.name = Access(Setter1PLC)
+node.difficulty = 0
+node.operation = 0
+node.depth = 2
+node.identifier = 4
+node.parent = 2
+
+node.name = Gain physical access to component Setter1PLC
+node.difficulty = 0
+node.operation = 2
+node.depth = 3
+node.identifier = 5
+node.parent = 4
+
+node.name = Gain remote access to component Setter1PLC
+node.difficulty = 0
+node.operation = 0
+node.depth = 3
+node.identifier = 6
+node.parent = 4
+
+node.name = NetworkAccess(ProcessNetwork)
+node.difficulty = 0
+node.operation = 0
+node.depth = 4
+node.identifier = 7
+node.parent = 6
+
+node.name = Gain physical access to component Hatcher2HMI
+node.difficulty = 0
+node.operation = 2
+node.depth = 5
+node.identifier = 8
+node.parent = 7
+
+node.name = ExploitDoSVuln(Setter1PLC)
+node.difficulty = 0
+node.operation = 0
+node.depth = 2
+node.identifier = 9
+node.parent = 2
+
+node.name = Exploit known DoS vulnerability in system part Setter1PLC
+node.difficulty = 0
+node.operation = 2
+node.depth = 3
+node.identifier = 10
+node.parent = 9
+
+node.name = DiscoverDoSVuln(Setter1PLC)
+node.difficulty = 0
+node.operation = 1
+node.depth = 3
+node.identifier = 11
+node.parent = 9
+
+node.name = Discover zero-day DoS vulnerability in system part Setter1PLC
+node.difficulty = 0
+node.operation = 2
+node.depth = 4
+node.identifier = 12
+node.parent = 11
+
+node.name = Exploit zero-day DoS vulnerability in system part Setter1PLC
+node.difficulty = 0
+node.operation = 2
+node.depth = 4
+node.identifier = 13
+node.parent = 11

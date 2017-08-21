@@ -1,0 +1,945 @@
+
+node.name = Modify(S1V)
+node.difficulty = 0
+node.operation = 0
+node.depth = 0
+node.identifier = 0
+node.parent = 0
+
+node.name = Modify(S1V,SCADAPCControlModule)
+node.difficulty = 0
+node.operation = 0
+node.depth = 1
+node.identifier = 2
+node.parent = 0
+
+node.name = Use SCADAPCControlModule as a company employee
+node.difficulty = 0
+node.operation = 1
+node.depth = 2
+node.identifier = 3
+node.parent = 2
+
+node.name = Abuse vulnerabilities in SCADAPCControlModule
+node.difficulty = 0
+node.operation = 1
+node.depth = 2
+node.identifier = 4
+node.parent = 2
+
+node.name = Access(SCADAPC)
+node.difficulty = 0
+node.operation = 0
+node.depth = 3
+node.identifier = 5
+node.parent = 3
+
+node.name = Gain physical access to component SCADAPC
+node.difficulty = 0
+node.operation = 2
+node.depth = 4
+node.identifier = 6
+node.parent = 5
+
+node.name = Gain remote access to component SCADAPC
+node.difficulty = 0
+node.operation = 0
+node.depth = 4
+node.identifier = 7
+node.parent = 5
+
+node.name = NetworkAccess(ProcessNetwork)
+node.difficulty = 0
+node.operation = 0
+node.depth = 5
+node.identifier = 8
+node.parent = 7
+
+node.name = Gain physical access to component Hatcher2HMI
+node.difficulty = 0
+node.operation = 2
+node.depth = 6
+node.identifier = 9
+node.parent = 8
+
+node.name = Authenticate(SCADAPCControlModule)
+node.difficulty = 0
+node.operation = 1
+node.depth = 3
+node.identifier = 10
+node.parent = 3
+
+node.name = LogIn(SCADAPCControlModule)
+node.difficulty = 1
+node.operation = 0
+node.depth = 4
+node.identifier = 11
+node.parent = 10
+
+node.name = Authenticate(SCADAPCAuthModule)
+node.difficulty = 0
+node.operation = 1
+node.depth = 4
+node.identifier = 12
+node.parent = 10
+
+node.name = LogIn(SCADAPCAuthModule)
+node.difficulty = 0
+node.operation = 0
+node.depth = 5
+node.identifier = 13
+node.parent = 12
+
+node.name = Possess credential ManagerPassword
+node.difficulty = 0
+node.operation = 2
+node.depth = 6
+node.identifier = 14
+node.parent = 13
+
+node.name = ObtainCred(ManagerPassword)
+node.difficulty = 0
+node.operation = 0
+node.depth = 6
+node.identifier = 15
+node.parent = 13
+
+node.name = Steal ManagerPassword from user Manager
+node.difficulty = 0
+node.operation = 2
+node.depth = 7
+node.identifier = 16
+node.parent = 15
+
+node.name = Obtain(ManagerPassword)
+node.difficulty = 0
+node.operation = 0
+node.depth = 7
+node.identifier = 17
+node.parent = 15
+
+node.name = Obtain(ManagerPassword,SCADAPC)
+node.difficulty = 0
+node.operation = 1
+node.depth = 8
+node.identifier = 18
+node.parent = 17
+
+node.name = Access(SCADAPC)
+node.difficulty = 0
+node.operation = 0
+node.depth = 9
+node.identifier = 19
+node.parent = 18
+
+node.name = Gain physical access to component SCADAPC
+node.difficulty = 0
+node.operation = 2
+node.depth = 10
+node.identifier = 20
+node.parent = 19
+
+node.name = Gain remote access to component SCADAPC
+node.difficulty = 0
+node.operation = 0
+node.depth = 10
+node.identifier = 21
+node.parent = 19
+
+node.name = NetworkAccess(ProcessNetwork)
+node.difficulty = 0
+node.operation = 0
+node.depth = 11
+node.identifier = 22
+node.parent = 21
+
+node.name = Gain physical access to component Hatcher2HMI
+node.difficulty = 0
+node.operation = 2
+node.depth = 12
+node.identifier = 23
+node.parent = 22
+
+node.name = ExploitDLVuln(SCADAPC)
+node.difficulty = 0
+node.operation = 0
+node.depth = 9
+node.identifier = 24
+node.parent = 18
+
+node.name = DiscoverDLVuln(SCADAPC)
+node.difficulty = 0
+node.operation = 1
+node.depth = 10
+node.identifier = 25
+node.parent = 24
+
+node.name = Discover zero-day data leakage vulnerability in component SCADAPC
+node.difficulty = 0
+node.operation = 2
+node.depth = 11
+node.identifier = 26
+node.parent = 25
+
+node.name = Exploit zero-day data leakage vulnerability in component SCADAPC
+node.difficulty = 0
+node.operation = 2
+node.depth = 11
+node.identifier = 27
+node.parent = 25
+
+node.name = ExploitAuthVuln(SCADAPCAuthModule)
+node.difficulty = 0
+node.operation = 0
+node.depth = 6
+node.identifier = 28
+node.parent = 13
+
+node.name = DiscoverAuthVuln(SCADAPCAuthModule)
+node.difficulty = 0
+node.operation = 1
+node.depth = 7
+node.identifier = 29
+node.parent = 28
+
+node.name = Discover zero-day compromised authentication vulnerability in module SCADAPCAuthModule
+node.difficulty = 0
+node.operation = 2
+node.depth = 8
+node.identifier = 30
+node.parent = 29
+
+node.name = Exploit zero-day compromised authentication vulnerability in module SCADAPCAuthModule
+node.difficulty = 0
+node.operation = 2
+node.depth = 8
+node.identifier = 31
+node.parent = 29
+
+node.name = Authenticate(SCADAPCOSModule)
+node.difficulty = 0
+node.operation = 1
+node.depth = 5
+node.identifier = 32
+node.parent = 12
+
+node.name = LogIn(SCADAPCOSModule)
+node.difficulty = 0
+node.operation = 0
+node.depth = 6
+node.identifier = 33
+node.parent = 32
+
+node.name = Possess credential SCADAPCPassword
+node.difficulty = 0
+node.operation = 2
+node.depth = 7
+node.identifier = 34
+node.parent = 33
+
+node.name = ObtainCred(SCADAPCPassword)
+node.difficulty = 0
+node.operation = 0
+node.depth = 7
+node.identifier = 35
+node.parent = 33
+
+node.name = Steal SCADAPCPassword from user Manager
+node.difficulty = 0
+node.operation = 2
+node.depth = 8
+node.identifier = 36
+node.parent = 35
+
+node.name = Obtain(SCADAPCPassword)
+node.difficulty = 0
+node.operation = 0
+node.depth = 8
+node.identifier = 37
+node.parent = 35
+
+node.name = Obtain(SCADAPCPassword,SCADAPC)
+node.difficulty = 0
+node.operation = 1
+node.depth = 9
+node.identifier = 38
+node.parent = 37
+
+node.name = Access(SCADAPC)
+node.difficulty = 0
+node.operation = 0
+node.depth = 10
+node.identifier = 39
+node.parent = 38
+
+node.name = Gain physical access to component SCADAPC
+node.difficulty = 0
+node.operation = 2
+node.depth = 11
+node.identifier = 40
+node.parent = 39
+
+node.name = Gain remote access to component SCADAPC
+node.difficulty = 0
+node.operation = 0
+node.depth = 11
+node.identifier = 41
+node.parent = 39
+
+node.name = NetworkAccess(ProcessNetwork)
+node.difficulty = 0
+node.operation = 0
+node.depth = 12
+node.identifier = 42
+node.parent = 41
+
+node.name = Gain physical access to component Hatcher2HMI
+node.difficulty = 0
+node.operation = 2
+node.depth = 13
+node.identifier = 43
+node.parent = 42
+
+node.name = ExploitDLVuln(SCADAPC)
+node.difficulty = 0
+node.operation = 0
+node.depth = 10
+node.identifier = 44
+node.parent = 38
+
+node.name = DiscoverDLVuln(SCADAPC)
+node.difficulty = 0
+node.operation = 1
+node.depth = 11
+node.identifier = 45
+node.parent = 44
+
+node.name = Discover zero-day data leakage vulnerability in component SCADAPC
+node.difficulty = 0
+node.operation = 2
+node.depth = 12
+node.identifier = 46
+node.parent = 45
+
+node.name = Exploit zero-day data leakage vulnerability in component SCADAPC
+node.difficulty = 0
+node.operation = 2
+node.depth = 12
+node.identifier = 47
+node.parent = 45
+
+node.name = ExploitAuthVuln(SCADAPCOSModule)
+node.difficulty = 0
+node.operation = 0
+node.depth = 7
+node.identifier = 48
+node.parent = 33
+
+node.name = DiscoverAuthVuln(SCADAPCOSModule)
+node.difficulty = 0
+node.operation = 1
+node.depth = 8
+node.identifier = 49
+node.parent = 48
+
+node.name = Discover zero-day compromised authentication vulnerability in module SCADAPCOSModule
+node.difficulty = 0
+node.operation = 2
+node.depth = 9
+node.identifier = 50
+node.parent = 49
+
+node.name = Exploit zero-day compromised authentication vulnerability in module SCADAPCOSModule
+node.difficulty = 0
+node.operation = 2
+node.depth = 9
+node.identifier = 51
+node.parent = 49
+
+node.name = Authenticate(SCADAPCOSModule)
+node.difficulty = 0
+node.operation = 1
+node.depth = 4
+node.identifier = 52
+node.parent = 10
+
+node.name = LogIn(SCADAPCOSModule)
+node.difficulty = 0
+node.operation = 0
+node.depth = 5
+node.identifier = 53
+node.parent = 52
+
+node.name = Possess credential SCADAPCPassword
+node.difficulty = 0
+node.operation = 2
+node.depth = 6
+node.identifier = 54
+node.parent = 53
+
+node.name = ObtainCred(SCADAPCPassword)
+node.difficulty = 0
+node.operation = 0
+node.depth = 6
+node.identifier = 55
+node.parent = 53
+
+node.name = Steal SCADAPCPassword from user Manager
+node.difficulty = 0
+node.operation = 2
+node.depth = 7
+node.identifier = 56
+node.parent = 55
+
+node.name = Obtain(SCADAPCPassword)
+node.difficulty = 0
+node.operation = 0
+node.depth = 7
+node.identifier = 57
+node.parent = 55
+
+node.name = Obtain(SCADAPCPassword,SCADAPC)
+node.difficulty = 0
+node.operation = 1
+node.depth = 8
+node.identifier = 58
+node.parent = 57
+
+node.name = Access(SCADAPC)
+node.difficulty = 0
+node.operation = 0
+node.depth = 9
+node.identifier = 59
+node.parent = 58
+
+node.name = Gain physical access to component SCADAPC
+node.difficulty = 0
+node.operation = 2
+node.depth = 10
+node.identifier = 60
+node.parent = 59
+
+node.name = Gain remote access to component SCADAPC
+node.difficulty = 0
+node.operation = 0
+node.depth = 10
+node.identifier = 61
+node.parent = 59
+
+node.name = NetworkAccess(ProcessNetwork)
+node.difficulty = 0
+node.operation = 0
+node.depth = 11
+node.identifier = 62
+node.parent = 61
+
+node.name = Gain physical access to component Hatcher2HMI
+node.difficulty = 0
+node.operation = 2
+node.depth = 12
+node.identifier = 63
+node.parent = 62
+
+node.name = ExploitDLVuln(SCADAPC)
+node.difficulty = 0
+node.operation = 0
+node.depth = 9
+node.identifier = 64
+node.parent = 58
+
+node.name = DiscoverDLVuln(SCADAPC)
+node.difficulty = 0
+node.operation = 1
+node.depth = 10
+node.identifier = 65
+node.parent = 64
+
+node.name = Discover zero-day data leakage vulnerability in component SCADAPC
+node.difficulty = 0
+node.operation = 2
+node.depth = 11
+node.identifier = 66
+node.parent = 65
+
+node.name = Exploit zero-day data leakage vulnerability in component SCADAPC
+node.difficulty = 0
+node.operation = 2
+node.depth = 11
+node.identifier = 67
+node.parent = 65
+
+node.name = ExploitAuthVuln(SCADAPCOSModule)
+node.difficulty = 0
+node.operation = 0
+node.depth = 6
+node.identifier = 68
+node.parent = 53
+
+node.name = DiscoverAuthVuln(SCADAPCOSModule)
+node.difficulty = 0
+node.operation = 1
+node.depth = 7
+node.identifier = 69
+node.parent = 68
+
+node.name = Discover zero-day compromised authentication vulnerability in module SCADAPCOSModule
+node.difficulty = 0
+node.operation = 2
+node.depth = 8
+node.identifier = 70
+node.parent = 69
+
+node.name = Exploit zero-day compromised authentication vulnerability in module SCADAPCOSModule
+node.difficulty = 0
+node.operation = 2
+node.depth = 8
+node.identifier = 71
+node.parent = 69
+
+node.name = Authorization(S1V,SCADAPCControlModule)
+node.difficulty = 0
+node.operation = 0
+node.depth = 3
+node.identifier = 72
+node.parent = 3
+
+node.name = Access(SCADAPC)
+node.difficulty = 0
+node.operation = 0
+node.depth = 3
+node.identifier = 73
+node.parent = 4
+
+node.name = Gain physical access to component SCADAPC
+node.difficulty = 0
+node.operation = 2
+node.depth = 4
+node.identifier = 74
+node.parent = 73
+
+node.name = Gain remote access to component SCADAPC
+node.difficulty = 0
+node.operation = 0
+node.depth = 4
+node.identifier = 75
+node.parent = 73
+
+node.name = NetworkAccess(ProcessNetwork)
+node.difficulty = 0
+node.operation = 0
+node.depth = 5
+node.identifier = 76
+node.parent = 75
+
+node.name = Gain physical access to component Hatcher2HMI
+node.difficulty = 0
+node.operation = 2
+node.depth = 6
+node.identifier = 77
+node.parent = 76
+
+node.name = ExploitRCEVuln(SCADAPCControlModule)
+node.difficulty = 0
+node.operation = 0
+node.depth = 3
+node.identifier = 78
+node.parent = 4
+
+node.name = DiscoverRCEVuln(SCADAPCControlModule)
+node.difficulty = 0
+node.operation = 1
+node.depth = 4
+node.identifier = 79
+node.parent = 78
+
+node.name = Discover zero-day remote code execution vulnerability in module SCADAPCControlModule
+node.difficulty = 0
+node.operation = 2
+node.depth = 5
+node.identifier = 80
+node.parent = 79
+
+node.name = Exploit zero-day remote code execution vulnerability in module SCADAPCControlModule
+node.difficulty = 0
+node.operation = 2
+node.depth = 5
+node.identifier = 81
+node.parent = 79
+
+node.name = Modify(S1V,S1HMIControlModule)
+node.difficulty = 0
+node.operation = 0
+node.depth = 1
+node.identifier = 82
+node.parent = 0
+
+node.name = Use S1HMIControlModule as a company employee
+node.difficulty = 0
+node.operation = 1
+node.depth = 2
+node.identifier = 83
+node.parent = 82
+
+node.name = Abuse vulnerabilities in S1HMIControlModule
+node.difficulty = 0
+node.operation = 1
+node.depth = 2
+node.identifier = 84
+node.parent = 82
+
+node.name = Access(Setter1HMI)
+node.difficulty = 0
+node.operation = 0
+node.depth = 3
+node.identifier = 85
+node.parent = 83
+
+node.name = Gain physical access to component Setter1HMI
+node.difficulty = 0
+node.operation = 2
+node.depth = 4
+node.identifier = 86
+node.parent = 85
+
+node.name = Gain remote access to component Setter1HMI
+node.difficulty = 0
+node.operation = 0
+node.depth = 4
+node.identifier = 87
+node.parent = 85
+
+node.name = NetworkAccess(ProcessNetwork)
+node.difficulty = 0
+node.operation = 0
+node.depth = 5
+node.identifier = 88
+node.parent = 87
+
+node.name = Gain physical access to component Hatcher2HMI
+node.difficulty = 0
+node.operation = 2
+node.depth = 6
+node.identifier = 89
+node.parent = 88
+
+node.name = Authenticate(S1HMIControlModule)
+node.difficulty = 0
+node.operation = 1
+node.depth = 3
+node.identifier = 90
+node.parent = 83
+
+node.name = LogIn(S1HMIControlModule)
+node.difficulty = 1
+node.operation = 0
+node.depth = 4
+node.identifier = 91
+node.parent = 90
+
+node.name = Authenticate(S1HMIAuthModule)
+node.difficulty = 0
+node.operation = 1
+node.depth = 4
+node.identifier = 92
+node.parent = 90
+
+node.name = LogIn(S1HMIAuthModule)
+node.difficulty = 0
+node.operation = 0
+node.depth = 5
+node.identifier = 93
+node.parent = 92
+
+node.name = Possess credential OperatorPassword
+node.difficulty = 0
+node.operation = 2
+node.depth = 6
+node.identifier = 94
+node.parent = 93
+
+node.name = ObtainCred(OperatorPassword)
+node.difficulty = 0
+node.operation = 0
+node.depth = 6
+node.identifier = 95
+node.parent = 93
+
+node.name = Steal OperatorPassword from user Operator
+node.difficulty = 0
+node.operation = 2
+node.depth = 7
+node.identifier = 96
+node.parent = 95
+
+node.name = Obtain(OperatorPassword)
+node.difficulty = 0
+node.operation = 0
+node.depth = 7
+node.identifier = 97
+node.parent = 95
+
+node.name = Obtain(OperatorPassword,Setter1HMI)
+node.difficulty = 0
+node.operation = 1
+node.depth = 8
+node.identifier = 98
+node.parent = 97
+
+node.name = Access(Setter1HMI)
+node.difficulty = 0
+node.operation = 0
+node.depth = 9
+node.identifier = 99
+node.parent = 98
+
+node.name = Gain physical access to component Setter1HMI
+node.difficulty = 0
+node.operation = 2
+node.depth = 10
+node.identifier = 100
+node.parent = 99
+
+node.name = Gain remote access to component Setter1HMI
+node.difficulty = 0
+node.operation = 0
+node.depth = 10
+node.identifier = 101
+node.parent = 99
+
+node.name = NetworkAccess(ProcessNetwork)
+node.difficulty = 0
+node.operation = 0
+node.depth = 11
+node.identifier = 102
+node.parent = 101
+
+node.name = Gain physical access to component Hatcher2HMI
+node.difficulty = 0
+node.operation = 2
+node.depth = 12
+node.identifier = 103
+node.parent = 102
+
+node.name = ExploitDLVuln(Setter1HMI)
+node.difficulty = 0
+node.operation = 0
+node.depth = 9
+node.identifier = 104
+node.parent = 98
+
+node.name = DiscoverDLVuln(Setter1HMI)
+node.difficulty = 0
+node.operation = 1
+node.depth = 10
+node.identifier = 105
+node.parent = 104
+
+node.name = Discover zero-day data leakage vulnerability in component Setter1HMI
+node.difficulty = 0
+node.operation = 2
+node.depth = 11
+node.identifier = 106
+node.parent = 105
+
+node.name = Exploit zero-day data leakage vulnerability in component Setter1HMI
+node.difficulty = 0
+node.operation = 2
+node.depth = 11
+node.identifier = 107
+node.parent = 105
+
+node.name = Obtain(OperatorPassword,Hatcher1HMI)
+node.difficulty = 0
+node.operation = 1
+node.depth = 8
+node.identifier = 108
+node.parent = 97
+
+node.name = Access(Hatcher1HMI)
+node.difficulty = 0
+node.operation = 0
+node.depth = 9
+node.identifier = 109
+node.parent = 108
+
+node.name = Gain physical access to component Hatcher1HMI
+node.difficulty = 0
+node.operation = 2
+node.depth = 10
+node.identifier = 110
+node.parent = 109
+
+node.name = Gain remote access to component Hatcher1HMI
+node.difficulty = 0
+node.operation = 0
+node.depth = 10
+node.identifier = 111
+node.parent = 109
+
+node.name = NetworkAccess(ProcessNetwork)
+node.difficulty = 0
+node.operation = 0
+node.depth = 11
+node.identifier = 112
+node.parent = 111
+
+node.name = Gain physical access to component Hatcher2HMI
+node.difficulty = 0
+node.operation = 2
+node.depth = 12
+node.identifier = 113
+node.parent = 112
+
+node.name = ExploitDLVuln(Hatcher1HMI)
+node.difficulty = 0
+node.operation = 0
+node.depth = 9
+node.identifier = 114
+node.parent = 108
+
+node.name = DiscoverDLVuln(Hatcher1HMI)
+node.difficulty = 0
+node.operation = 1
+node.depth = 10
+node.identifier = 115
+node.parent = 114
+
+node.name = Discover zero-day data leakage vulnerability in component Hatcher1HMI
+node.difficulty = 0
+node.operation = 2
+node.depth = 11
+node.identifier = 116
+node.parent = 115
+
+node.name = Exploit zero-day data leakage vulnerability in component Hatcher1HMI
+node.difficulty = 0
+node.operation = 2
+node.depth = 11
+node.identifier = 117
+node.parent = 115
+
+node.name = ExploitAuthVuln(S1HMIAuthModule)
+node.difficulty = 0
+node.operation = 0
+node.depth = 6
+node.identifier = 118
+node.parent = 93
+
+node.name = DiscoverAuthVuln(S1HMIAuthModule)
+node.difficulty = 0
+node.operation = 1
+node.depth = 7
+node.identifier = 119
+node.parent = 118
+
+node.name = Discover zero-day compromised authentication vulnerability in module S1HMIAuthModule
+node.difficulty = 0
+node.operation = 2
+node.depth = 8
+node.identifier = 120
+node.parent = 119
+
+node.name = Exploit zero-day compromised authentication vulnerability in module S1HMIAuthModule
+node.difficulty = 0
+node.operation = 2
+node.depth = 8
+node.identifier = 121
+node.parent = 119
+
+node.name = Authorization(S1V,S1HMIControlModule)
+node.difficulty = 0
+node.operation = 0
+node.depth = 3
+node.identifier = 122
+node.parent = 83
+
+node.name = Access(Setter1HMI)
+node.difficulty = 0
+node.operation = 0
+node.depth = 3
+node.identifier = 123
+node.parent = 84
+
+node.name = Gain physical access to component Setter1HMI
+node.difficulty = 0
+node.operation = 2
+node.depth = 4
+node.identifier = 124
+node.parent = 123
+
+node.name = Gain remote access to component Setter1HMI
+node.difficulty = 0
+node.operation = 0
+node.depth = 4
+node.identifier = 125
+node.parent = 123
+
+node.name = NetworkAccess(ProcessNetwork)
+node.difficulty = 0
+node.operation = 0
+node.depth = 5
+node.identifier = 126
+node.parent = 125
+
+node.name = Gain physical access to component Hatcher2HMI
+node.difficulty = 0
+node.operation = 2
+node.depth = 6
+node.identifier = 127
+node.parent = 126
+
+node.name = ExploitRCEVuln(S1HMIControlModule)
+node.difficulty = 0
+node.operation = 0
+node.depth = 3
+node.identifier = 128
+node.parent = 84
+
+node.name = DiscoverRCEVuln(S1HMIControlModule)
+node.difficulty = 0
+node.operation = 1
+node.depth = 4
+node.identifier = 129
+node.parent = 128
+
+node.name = Discover zero-day remote code execution vulnerability in module S1HMIControlModule
+node.difficulty = 0
+node.operation = 2
+node.depth = 5
+node.identifier = 130
+node.parent = 129
+
+node.name = Exploit zero-day remote code execution vulnerability in module S1HMIControlModule
+node.difficulty = 0
+node.operation = 2
+node.depth = 5
+node.identifier = 131
+node.parent = 129
+
+node.name = Spoofing attack
+node.difficulty = 0
+node.operation = 1
+node.depth = 1
+node.identifier = 132
+node.parent = 0
+
+node.name = Run spoofing software
+node.difficulty = 0
+node.operation = 2
+node.depth = 2
+node.identifier = 133
+node.parent = 132
+
+node.name = NetworkAccess(ProcessNetwork)
+node.difficulty = 0
+node.operation = 0
+node.depth = 2
+node.identifier = 134
+node.parent = 132
+
+node.name = Gain physical access to component Hatcher2HMI
+node.difficulty = 0
+node.operation = 2
+node.depth = 3
+node.identifier = 135
+node.parent = 134
