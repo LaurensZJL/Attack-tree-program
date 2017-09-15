@@ -89,3 +89,38 @@ node.operation = 2
 node.depth = 4
 node.identifier = 13
 node.parent = 11
+
+node.name = Access(EWONServer)
+node.difficulty = 0
+node.operation = 0
+node.depth = 5
+node.identifier = 14
+node.parent = 7
+
+node.name = Gain physical access to component EWONServer
+node.difficulty = 0
+node.operation = 2
+node.depth = 6
+node.identifier = 15
+node.parent = 14
+
+node.name = Gain remote access to component EWONServer
+node.difficulty = 0
+node.operation = 0
+node.depth = 6
+node.identifier = 16
+node.parent = 14
+
+node.name = Access(EquipmentVendorPC)
+node.difficulty = 0
+node.operation = 0
+node.depth = 7
+node.identifier = 17
+node.parent = 16
+
+node.name = Gain physical access to component EquipmentVendorPC
+node.difficulty = 0
+node.operation = 2
+node.depth = 7
+node.identifier = 18
+node.parent = 17
